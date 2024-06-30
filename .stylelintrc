@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-html",
+    "stylelint-config-sass-guidelines"
+  ],
+  "ignoreFiles": ["src/styles/reset.scss", "src/styles/variants/colors.scss"],
+  "rules": {
+    "no-invalid-double-slash-comments": null,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "max-nesting-depth": null,
+    "selector-max-compound-selectors": null,
+    "value-no-vendor-prefix": null,
+    "color-named": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { "ignorePseudoClasses": ["global"] }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "extends": ["stylelint-config-standard", "stylelint-scss"]
+    },
+    {
+      "files": ["**/*.astro"],
+      "customSyntax": "postcss-html"
+    }
+  ]
+}
