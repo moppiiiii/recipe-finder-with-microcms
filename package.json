@@ -12,6 +12,7 @@
     "lint:fix": "eslint --fix 'src/**/*.{ts,astro}'",
     "format:check": "prettier . --check **/*.{mjs,ts,json,yaml,md,astro}",
     "format:fix": "prettier . --write **/*.{mjs,ts,json,yaml,md,astro}",
+    "test:e2e": "playwright test",
     "init:lefthook": "lefthook install"
   },
   "dependencies": {
@@ -21,6 +22,9 @@
     "typescript": "^5.5.2"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.9.1",
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.9",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.57.0",
