@@ -8,6 +8,9 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "lint:check": "eslint 'src/**/*.{ts,astro}'",
+    "lint:fix": "eslint --fix 'src/**/*.{ts,astro}'",
+    "format:check": "prettier . --check **/*.{mjs,ts,json,yaml,md,astro}",
     "format:fix": "prettier . --write **/*.{mjs,ts,json,yaml,md,astro}"
   },
   "dependencies": {
@@ -16,6 +19,14 @@
     "typescript": "^5.5.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-astro": "^0.34.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "globals": "^13.24.0",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0"
   }
