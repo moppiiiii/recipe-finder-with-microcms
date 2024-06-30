@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "recipe-finder",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,7 +11,8 @@
     "lint:check": "eslint 'src/**/*.{ts,astro}'",
     "lint:fix": "eslint --fix 'src/**/*.{ts,astro}'",
     "format:check": "prettier . --check **/*.{mjs,ts,json,yaml,md,astro}",
-    "format:fix": "prettier . --write **/*.{mjs,ts,json,yaml,md,astro}"
+    "format:fix": "prettier . --write **/*.{mjs,ts,json,yaml,md,astro}",
+    "init:lefthook": "lefthook install"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
@@ -28,6 +29,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^3.1.0",
     "globals": "^13.24.0",
+    "lefthook": "^1.6.18",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
     "stylelint": "^16.6.1",

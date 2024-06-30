@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    audit:
+      run: pnpm audit
+    lint:fix:
+      glob: "**/*.{ts,astro}"
+      run: eslint --fix {staged_files} && git add {staged_files}
+    format:fix:
+      glob: "**/*.{mjs,ts,json,yaml,md,astro}"
+      run: prettier --write {staged_files} && git add {staged_files}
